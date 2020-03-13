@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-const db_url = process.env.MONGODB_URI || "mongodb://localhost/google-books";
+const db_url = process.env.MONGODB_URI || "mongodb://admin:Pa55w0rd@ds349618.mlab.com:49618/heroku_gbx3tpmz";
+
 
 const databaseConnection = () => {
   try {
