@@ -55,8 +55,8 @@ function Search() {
                 return (
                   <ListItem key={book.id}>
                     <Row>
-                      <Col size="md-3">
-                        <p><img src={book.image} alt={book.title} style={{maxWidth: "100%", height: "auto"}} /></p>
+                      <Col size="md-3" >
+                        <p><img src={book.image} alt={book.title} style={{maxWidth: "100%", height: "auto", color:"#F4B400"}} /></p>
                         <p>
                           <DetailsBtn onClick={() => { window.open(book.link, "_blank") }} />
                           <SaveBtn onClick={() => { saveBook(book) }} />
@@ -72,7 +72,7 @@ function Search() {
               })}
             </List>
           ) : (
-            <h3>No Results to Display</h3>
+            <h3 style = {{color:"#F4B400"}}>No Results to Display</h3>
           )}
         </Col>
       </Row>

@@ -11,3 +11,7 @@
   display: inline-block;
   margin-left: 1em;
 }
+
+.bg-primary {
+  background-color: rgb(65, 45, 45) !important;
+}

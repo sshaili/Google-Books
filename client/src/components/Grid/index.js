@@ -17,6 +17,7 @@ export function Row({ fluid, children }) {
 export function Col({ size, children }) {
   return (
     <div
+    style = {{background: "beige"}}
       className={size ? size
         .split(" ")
         .map(size => "col-" + size)

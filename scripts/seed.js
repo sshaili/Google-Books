@@ -120,10 +120,12 @@ const books = [
   }
 ];
 
-db.Book.deleteMany({})
-  .then(() => db.Book.insertMany(books))
+
+db.Book
+  .remove({})
+  .then(() => db.Book.collection.insertMany(bookSeed))
   .then(data => {
-    console.log(data.length + ' records inserted!');
+    console.log(data.result.n + " records inserted!");
     process.exit(0);
   })
   .catch(err => {
